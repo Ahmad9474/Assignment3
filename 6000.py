@@ -59,8 +59,8 @@ with open ('tweets.csv', 'wb') as outfile:
     for tweet in t:
         if "FTC" in tweet.text:
             writer.writerow([tweet.id_str,tweet.user.screen_name,tweet.created_at,tweet.text.encode('unicode-escape')])
-    t2 = get_tweets("Shopify")
+    t2 = get_tweets("tobi")
     for tweet in t2:
-        if "citron" in tweet.text:
+        if "short-selling troll" in tweet.text:
             writer.writerow([tweet.id_str,tweet.user.screen_name,tweet.created_at,tweet.text.encode('unicode-escape')])
 print "most popular tweet of citron research is: \"" + text + " \" with a retweet count of " +str(max(list1))
